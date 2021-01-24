@@ -59,6 +59,7 @@ export default () => {
         data={data}
         horizontal
         pagingEnabled
+        showsHorizontalScrollIndicator={false}
         onScroll={Animated.event(
           [{nativeEvent: {contentOffset: {x: scrollX}}}],
           {useNativeDriver: true},
